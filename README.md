@@ -1,2 +1,2 @@
-# eslint-config-panoply
-ESLint shareable config for the Panoply JavaScript style guide
+# eslint-config-panoplyio
+ESLint shareable config for the Panoply.io JavaScript style guide
