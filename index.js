@@ -13,9 +13,9 @@ module.exports = extend(true, google, {
         Polymer: false,
         moment: false
     },
-    plugins: {
+    plugins: [
         'html'
-    },
+    ],
     rules: {
         'new-cap': [ 2, {
             capIsNewExceptions: [ 'Polymer' ]
@@ -98,5 +98,5 @@ module.exports = extend(true, google, {
     'env': {
         'node': true,
         'browser': true
-    },
+    }
 })
