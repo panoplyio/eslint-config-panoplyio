@@ -1,7 +1,4 @@
-var extend = require('extend')
-var google = require('eslint-config-google')
-
-module.exports = extend(true, google, {
+module.exports = {
     globals: {
         Panoply: true,
         describe: true,
@@ -95,8 +92,9 @@ module.exports = extend(true, google, {
         // and helpers are at the bottom. Instead of vice-versa.
         'no-use-before-define': [ 0 ]
     },
-    'env': {
+    env: {
         'node': true,
         'browser': true
-    }
-})
+    },
+    extends: 'google'
+}
