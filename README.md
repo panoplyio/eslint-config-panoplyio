@@ -4,7 +4,7 @@
 #### Install
 
 ```
-$ npm install git://github.com/panoplyio/eslint-config-panoplyio.git#1.0.3
+$ npm install git://github.com/panoplyio/eslint-config-panoplyio.git#1.0.4
 ```
 
 > Replace `v1.0.2` with the specific tag you'd like to use for strict versioning. Or omit it for latest (not recommended)
