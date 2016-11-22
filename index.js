@@ -15,7 +15,7 @@ module.exports = {
     ],
     rules: {
         'new-cap': [ 2, {
-            capIsNewExceptions: [ 'Polymer' ]
+            capIsNewExceptions: [ 'Polymer', 'Router' ]
         }],
         'linebreak-style': [ 2, 'unix' ],
         'indent': [ 2, 4 ],
@@ -98,3 +98,4 @@ module.exports = {
     },
     extends: 'google'
 }
+
