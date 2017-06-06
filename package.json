@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/panoplyio/eslint-config-panoplioy#readme",
   "dependencies": {
-    "eslint-config-google": "0.3.0",
-    "eslint-plugin-html": "1.5.1",
+    "eslint-config-google": "0.8.0",
+    "eslint-plugin-html": "2.0.3",
     "extend": "3.0.0"
   }
 }
