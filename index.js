@@ -83,6 +83,21 @@ module.exports = {
         // allow TODO and FIXME comments
         'no-warning-comments' : [ 0 ],
 
+        // allow usage of the `var` keyword
+        'no-var': [ 0 ],
+
+        // don't require parentheses for single argument arrow functions
+        'arrow-parens': [ 0 ],
+
+        // allow usage of `arguments` instead of only rest params (...args)
+        'prefer-rest-params': [ 0 ],
+
+        // allow the usage of `apply()` instead of only spread operator
+        'prefer-spread': [ 0 ],
+
+        // allow usage of `this` keyword outside of classes/class-like objects.
+        'no-invalid-this': [ 0 ],
+
         // allow non-radis in parseInt because ECMAScript 5
         // makes it very clear that the default is base 10.
         'radix': [ 0 ],
@@ -94,7 +109,8 @@ module.exports = {
     },
     env: {
         'node': true,
-        'browser': true
+        'browser': true,
+        'es6': true
     },
     extends: 'google'
 }
