@@ -19,7 +19,9 @@ module.exports = {
         }],
         'linebreak-style': [ 2, 'unix' ],
         'indent': [ 2, 4 ],
-        'quotes': [ 2, 'single', 'avoid-escape' ],
+        'quotes': [ 2, 'single', 'backtick', {
+            'avoidEscape': true
+        }],
 
         // spacing
         'space-in-parens': [ 0, 'always' ],
@@ -114,4 +116,3 @@ module.exports = {
     },
     extends: 'google'
 }
-

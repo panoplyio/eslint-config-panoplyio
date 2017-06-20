@@ -4,7 +4,7 @@
 #### Install
 
 ```
-$ npm install git://github.com/panoplyio/eslint-config-panoplyio.git#1.0.4
+$ npm install git://github.com/panoplyio/eslint-config-panoplyio.git#1.0.7
 ```
 
 > Replace `v1.0.2` with the specific tag you'd like to use for strict versioning. Or omit it for latest (not recommended)
@@ -15,6 +15,3 @@ $(npm bin)/eslint -c panoplyio --ext .html --ext .js src/
 ```
 
 This is the normal `eslint` CLI command, except preconfigured to use this `panoplyio` configuration and also scan html files.
-
-
-
