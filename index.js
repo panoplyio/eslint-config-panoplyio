@@ -13,12 +13,17 @@ module.exports = {
     plugins: [
         'html'
     ],
+    parserOptions: {
+        ecmaVersion: 2018,
+        sourceType: 'module'
+    },
     rules: {
         'new-cap': [ 2, {
             capIsNewExceptions: [ 'Polymer', 'Router' ]
         }],
         'linebreak-style': [ 2, 'unix' ],
-        'indent': [ 2, 4 ],
+        'indent': 'off',
+        'indent-legacy': [2, 4],
         'quotes': [ 2, 'single', 'avoid-escape' ],
 
         // spacing
@@ -29,7 +34,11 @@ module.exports = {
         'object-curly-spacing': [ 0, 'always' ],
 
         'operator-linebreak': [ 2, 'before' ],
-        'complexity': [ 2, 5 ],
+
+        // this used to be [2, 5], but when updating to ESLint 5,
+        // complexity measurement got better and so the existing codebase
+        // failed to lint
+        'complexity': [ 2, 12 ],
 
         'no-unused-expressions': [ 2, {
             'allowTernary': true,
@@ -44,9 +53,10 @@ module.exports = {
         // made more readable by inverting the condition instead.
         'no-negated-condition': [ 2 ],
 
-        // allow functions to be used before they are defined
-        // because JS compiles the functions before running the code
-        'no-use-before-define': [ 2, 'nofunc' ],
+        'no-multi-spaces': ["error", {
+            "ignoreEOLComments": true,
+
+        }],
 
         'max-len': [ 2, 80, 4, {
             ignoreUrls: true
@@ -107,7 +117,11 @@ module.exports = {
         // and helpers are at the bottom. Instead of vice-versa.
         'no-use-before-define': [ 0 ],
         // prevent debugger statements in the code
-        'no-debugger': [ 2 ]
+        'no-debugger': [ 2 ],
+
+        'prefer-const': [0],
+
+        'prefer-promise-reject-errors': [0]
     },
     env: {
         'node': true,
