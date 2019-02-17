@@ -1,9 +1,14 @@
 {
   "name": "eslint-config-panoplyio",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "ESLint shareable config for the Panoply JavaScript style guide",
   "main": "index.js",
-  "keywords": ["eslint", "eslintconfig", "panoply", "panoply.io"],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "panoply",
+    "panoply.io"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,8 +23,8 @@
   },
   "homepage": "https://github.com/panoplyio/eslint-config-panoplioy#readme",
   "dependencies": {
-    "eslint-config-google": "0.8.0",
-    "eslint-plugin-html": "2.0.3",
+    "eslint-config-google": "0.12.0",
+    "eslint-plugin-html": "5.0.3",
     "extend": "3.0.0"
   }
 }
