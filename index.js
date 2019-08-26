@@ -63,7 +63,7 @@ module.exports = {
         }],
 
         // disallow weak equal signs (= instead of ==)
-        'eqeqeq': [ 2 ],
+        'eqeqeq': ["error", "always", { "null": "ignore" }],
 
         // jsdoc is required but doesn't have to be valid
         // this is in order to enforce some comments on classes and method
