@@ -24,7 +24,6 @@
   "homepage": "https://github.com/panoplyio/eslint-config-panoplioy#readme",
   "dependencies": {
     "eslint-config-google": "0.12.0",
-    "eslint-plugin-html": "5.0.3",
-    "extend": "3.0.0"
+    "eslint-plugin-html": "5.0.3"
   }
 }
