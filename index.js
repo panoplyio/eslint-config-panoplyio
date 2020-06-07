@@ -74,8 +74,8 @@ module.exports = {
         // semi-colons not required (standardjs.com)
         'semi': [ 0 ],
 
-        // we don't care about IE8, trailing commas are valid in ES5
-        'comma-dangle': [ 0 ],
+        // trailing commas are required
+        'comma-dangle': ["error", "always-multiline"],
 
         // allow spacing around semi-colons
         // used for spacing for-loops for readability
@@ -130,4 +130,3 @@ module.exports = {
     },
     extends: 'google'
 }
-
