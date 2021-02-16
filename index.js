@@ -58,7 +58,7 @@ module.exports = {
 
         }],
 
-        'max-len': [ 2, 80, 4, {
+        'max-len': [ 2, 100, 4, {
             ignoreUrls: true
         }],
 
