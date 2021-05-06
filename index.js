@@ -11,7 +11,8 @@ module.exports = {
         moment: false
     },
     plugins: [
-        'html'
+        'html',
+        'filenames'
     ],
     parserOptions: {
         ecmaVersion: 2018,
@@ -121,7 +122,9 @@ module.exports = {
 
         'prefer-const': [0],
 
-        'prefer-promise-reject-errors': [0]
+        'prefer-promise-reject-errors': [0],
+
+        'filenames/match-regex': ['error', '^[a-z0-9-.]+$']
     },
     env: {
         'node': true,
