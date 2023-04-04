@@ -23,8 +23,7 @@ module.exports = {
             capIsNewExceptions: [ 'Polymer', 'Router' ]
         }],
         'linebreak-style': [ 2, 'unix' ],
-        'indent': 'off',
-        'indent-legacy': [2, 4],
+        'indent': ['error', 4, { 'SwitchCase': 1 }],
         'quotes': [ 2, 'single', 'avoid-escape' ],
 
         // spacing
