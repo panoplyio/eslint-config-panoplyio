@@ -11,6 +11,7 @@ module.exports = {
         moment: false,
     },
     plugins: [
+        'html',
         'filenames',
     ],
     parserOptions: {
