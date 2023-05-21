@@ -56,7 +56,6 @@ module.exports = {
         'multiline-comment-style': ['error', 'separate-lines'],
         'prefer-template': 'off',
         'class-methods-use-this': 'off',
-        'import/no-named-as-default': 'off',
         'no-confusing-arrow': ['error', { allowParens: true }],
         'no-underscore-dangle': 'off',
         'object-curly-newline': ['error', {
