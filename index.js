@@ -68,6 +68,7 @@ module.exports = {
         'space-before-blocks': ['error', 'always'],
         'space-infix-ops': 'error',
         'arrow-spacing': ['error', { before: true, after: true }],
+        'prefer-arrow-callback': 'error',
 
         // other
         'new-cap': ['error', {
@@ -136,7 +137,7 @@ module.exports = {
             objects: 'always-multiline',
             imports: 'always-multiline',
             exports: 'always-multiline',
-            functions: 'always-multiline',
+            functions: 'only-multiline',
         }],
 
         // allow spacing around semi-colons
