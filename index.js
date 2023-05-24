@@ -22,8 +22,8 @@ module.exports = {
         // Possible Errors
         'no-console': 'error',
         'no-import-assign': 'error',
-        'no-inner-declarations': 'off',
-        'no-prototype-builtins': 'off',
+        'no-inner-declarations': 'error',
+        'no-prototype-builtins': 'error',
         'require-atomic-updates': 'error',
 
         // Best Practices
@@ -55,7 +55,7 @@ module.exports = {
         'spaced-comment': ['error', 'always', { block: { balanced: true } }],
         'multiline-comment-style': ['error', 'separate-lines'],
         'prefer-template': 'off',
-        'class-methods-use-this': 'off',
+        'class-methods-use-this': 'error',
         'no-confusing-arrow': ['error', { allowParens: true }],
         'no-underscore-dangle': 'off',
         'object-curly-newline': ['error', {
@@ -126,7 +126,6 @@ module.exports = {
         // this is in order to enforce some comments on classes and method
         // without requiring a lot of redundant boilerplate
         'require-jsdoc': 'error',
-        'valid-jsdoc': 'off',
 
         // semi-colons not required (standardjs.com)
         'semi': ['error', 'never'],
@@ -142,7 +141,7 @@ module.exports = {
 
         // allow spacing around semi-colons
         // used for spacing for-loops for readability
-        'semi-spacing': 'off',
+        'semi-spacing': 'error',
 
         // allow multiple empty lines for spacious code
         'no-multiple-empty-lines': ['error', { max: 2 }],
@@ -156,8 +155,8 @@ module.exports = {
         // allow TODO and FIXME comments
         'no-warning-comments': 'off',
 
-        // allow usage of the `var` keyword
-        'no-var': 'off',
+        // disallow usage of the `var` keyword
+        'no-var': 'error',
 
         // don't require parentheses for single argument arrow functions
         'arrow-parens': 'off',
@@ -168,8 +167,8 @@ module.exports = {
         // allow the usage of `apply()` instead of only spread operator
         'prefer-spread': 'off',
 
-        // allow usage of `this` keyword outside of classes/class-like objects.
-        'no-invalid-this': 'off',
+        // disallow usage of `this` keyword outside of classes/class-like objects.
+        'no-invalid-this': 'error',
 
         // allow non-radis in parseInt because ECMAScript 5
         // makes it very clear that the default is base 10.
@@ -179,12 +178,13 @@ module.exports = {
         // to generate cleaner code where the core functionality is at the top
         // and helpers are at the bottom. Instead of vice-versa.
         'no-use-before-define': 'off',
+
         // prevent debugger statements in the code
         'no-debugger': 'error',
 
-        'prefer-const': 'off',
+        'prefer-const': 'error',
 
-        'prefer-promise-reject-errors': 'off',
+        'prefer-promise-reject-errors': 'error',
 
         'filenames/match-regex': ['error', '^[a-z0-9-.]+$'],
     },
