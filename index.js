@@ -61,5 +61,7 @@ module.exports = {
         // prevent debugger statements in the code
         'no-debugger': 'error',
     },
-    extends: './common',
+    extends: [
+        './common',
+    ],
 }
