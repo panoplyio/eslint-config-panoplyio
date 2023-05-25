@@ -8,7 +8,9 @@ module.exports = {
         'react',
     ],
     settings: {
-        react: { version: 'detect' },
+        react: {
+            version: 'detect',
+        },
     },
     rules: {
         'react/jsx-indent': ['error', 4],
