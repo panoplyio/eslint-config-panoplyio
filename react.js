@@ -36,8 +36,8 @@ module.exports = {
         'react/display-name': 'off', // we use babel to generate display names
     },
     env: {
-        jest: true,
         browser: true,
+        jest: true,
         es6: true,
     },
 }
