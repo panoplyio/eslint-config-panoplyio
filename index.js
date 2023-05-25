@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-undef
 module.exports = {
     rules: {
         'new-cap': 'error',
@@ -60,6 +59,11 @@ module.exports = {
 
         // prevent debugger statements in the code
         'no-debugger': 'error',
+    },
+    env: {
+        node: true,
+        browser: true,
+        es6: true,
     },
     extends: [
         './common',

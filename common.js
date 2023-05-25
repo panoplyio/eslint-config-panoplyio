@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-undef
 module.exports = {
     extends: [
         'eslint:recommended',
@@ -93,10 +92,5 @@ module.exports = {
         'space-in-parens': ['error', 'never'],
         'arrow-spacing': ['error', { before: true, after: true }],
         'prefer-arrow-callback': 'error',
-    },
-    env: {
-        browser: true,
-        jest: true,
-        es6: true,
     },
 }

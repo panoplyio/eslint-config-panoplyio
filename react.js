@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-undef
 module.exports = {
     extends: [
         './common',
@@ -35,5 +34,10 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error',
         'react/prop-types': 'error',
         'react/display-name': 'off', // we use babel to generate display names
+    },
+    env: {
+        jest: true,
+        browser: true,
+        es6: true,
     },
 }
