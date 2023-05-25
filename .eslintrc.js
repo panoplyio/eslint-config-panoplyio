@@ -1,1 +1,4 @@
-module.exports = require('./')
+// eslint-disable-next-line no-undef
+module.exports = {
+    extends: './index',
+}
