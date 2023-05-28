@@ -1,134 +1,71 @@
 module.exports = {
-    globals: {
-        Panoply: true,
-        describe: true,
-        it: true,
-        before: true,
-        beforeEach: true,
-        after: true,
-        afterEach: true,
-        Polymer: false,
-        moment: false
-    },
-    plugins: [
-        'html',
-        'filenames'
-    ],
-    parserOptions: {
-        ecmaVersion: 2018,
-        sourceType: 'module'
-    },
     rules: {
-        'new-cap': [ 2, {
-            capIsNewExceptions: [ 'Polymer', 'Router' ]
-        }],
-        'linebreak-style': [ 2, 'unix' ],
-        'indent': ['error', 4, { 'SwitchCase': 1 }],
-        'quotes': [ 2, 'single', 'avoid-escape' ],
+        'new-cap': 'error',
+        'linebreak-style': ['error', 'unix'],
 
         // spacing
-        'space-in-parens': [ 0, 'always' ],
-        'computed-property-spacing': [ 0, 'always' ],
-        'space-before-function-paren': [ 0, 'always' ],
-        'array-bracket-spacing': [ 0, 'always' ],
-        'object-curly-spacing': [ 0, 'always' ],
+        'computed-property-spacing': ['error', 'never'],
 
-        'operator-linebreak': [ 2, 'before' ],
+        'operator-linebreak': ['error', 'before'],
 
-        // this used to be [2, 5], but when updating to ESLint 5,
-        // complexity measurement got better and so the existing codebase
-        // failed to lint
-        'complexity': [ 2, 12 ],
+        'no-unused-expressions': ['error', {
+            allowTernary: true,
+            allowShortCircuit: true,
+        }],
 
-        'no-unused-expressions': [ 2, {
-            'allowTernary': true,
-            'allowShortCircuit': true
-        } ],
-
-        'no-unused-vars': [ 2, {
-            'argsIgnorePattern': '^next$'
+        'no-unused-vars': ['error', {
+            argsIgnorePattern: '^next$',
         }],
 
         // negated conditions are more difficult to understand. Code can be
         // made more readable by inverting the condition instead.
-        'no-negated-condition': [ 2 ],
-
-        'no-multi-spaces': ["error", {
-            "ignoreEOLComments": true,
-
-        }],
-
-        'max-len': [ 2, 100, 4, {
-            ignoreUrls: true
-        }],
-
-        // disallow weak equal signs (= instead of ==)
-        'eqeqeq': ["error", "always", { "null": "ignore" }],
+        'no-negated-condition': 'error',
 
         // jsdoc is required but doesn't have to be valid
         // this is in order to enforce some comments on classes and method
         // without requiring a lot of redundant boilerplate
-        'require-jsdoc': [ 2 ],
-        'valid-jsdoc': [ 0 ],
+        'require-jsdoc': 'error',
 
         // semi-colons not required (standardjs.com)
-        'semi': [ 0 ],
-
-        // trailing commas are required
-        'comma-dangle': ["error", "always-multiline"],
+        'semi': ['error', 'never'],
 
         // allow spacing around semi-colons
         // used for spacing for-loops for readability
-        'semi-spacing': [ 0 ],
-
-        // allow multiple empty lines for spacious code
-        'no-multiple-empty-lines': [ 0 ],
+        'semi-spacing': 'error',
 
         // allow inline comments
-        'no-inline-comments': [ 0 ],
-
-        // allow padded blocks where it makes sense
-        'padded-blocks': [ 0 ],
+        'no-inline-comments': 'off',
 
         // allow TODO and FIXME comments
-        'no-warning-comments' : [ 0 ],
-
-        // allow usage of the `var` keyword
-        'no-var': [ 0 ],
+        'no-warning-comments': 'off',
 
         // don't require parentheses for single argument arrow functions
-        'arrow-parens': [ 0 ],
+        'arrow-parens': 'off',
 
         // allow usage of `arguments` instead of only rest params (...args)
-        'prefer-rest-params': [ 0 ],
+        'prefer-rest-params': 'off',
 
         // allow the usage of `apply()` instead of only spread operator
-        'prefer-spread': [ 0 ],
-
-        // allow usage of `this` keyword outside of classes/class-like objects.
-        'no-invalid-this': [ 0 ],
+        'prefer-spread': 'off',
 
         // allow non-radis in parseInt because ECMAScript 5
         // makes it very clear that the default is base 10.
-        'radix': [ 0 ],
+        'radix': 'off',
 
         // allow, and sometimes even encourage use before definition in order
         // to generate cleaner code where the core functionality is at the top
         // and helpers are at the bottom. Instead of vice-versa.
-        'no-use-before-define': [ 0 ],
+        'no-use-before-define': 'off',
+
         // prevent debugger statements in the code
-        'no-debugger': [ 2 ],
-
-        'prefer-const': [0],
-
-        'prefer-promise-reject-errors': [0],
-
-        'filenames/match-regex': ['error', '^[a-z0-9-.]+$']
+        'no-debugger': 'error',
     },
     env: {
-        'node': true,
-        'browser': true,
-        'es6': true
+        node: true,
+        mocha: true,
+        es6: true,
     },
-    extends: 'google'
+    extends: [
+        './common',
+    ],
 }
