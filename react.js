@@ -6,6 +6,7 @@ module.exports = {
     ],
     plugins: [
         'react',
+        'react-hooks',
     ],
     settings: {
         react: {
@@ -33,9 +34,10 @@ module.exports = {
         'react/jsx-filename-extension': 'off',
         'react/require-default-props': 'off',
         'react/no-unused-prop-types': 'error',
-        'react-hooks/exhaustive-deps': 'error',
         'react/prop-types': 'error',
         'react/display-name': 'off', // we use babel to generate display names
+
+        'react-hooks/exhaustive-deps': 'error',
     },
     env: {
         browser: true,
