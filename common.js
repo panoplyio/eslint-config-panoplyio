@@ -44,6 +44,7 @@ module.exports = {
         'eol-last': ['error', 'always'],
         'func-call-spacing': ['error', 'never'],
         'implicit-arrow-linebreak': ['error', 'beside'],
+        'operator-linebreak': ['error', 'before'],
         'indent': ['error', 4, {
             SwitchCase: 1,
             ignoredNodes: ['TemplateLiteral *'],
