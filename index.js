@@ -6,8 +6,6 @@ module.exports = {
         // spacing
         'computed-property-spacing': ['error', 'never'],
 
-        'operator-linebreak': ['error', 'before'],
-
         'no-unused-expressions': ['error', {
             allowTernary: true,
             allowShortCircuit: true,
